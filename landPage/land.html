@@ -2,6 +2,7 @@
     <HEAD>
       <TITLE> Digian HomePage - Marketing Digital </TITLE>
       <link REL="stylesheet" HREF="estilo.css">
+      <script src="digianscript.js"></script>
     </HEAD>
     <BODY>
       <SECTION NAME="inicio" ID="ini">
@@ -9,8 +10,8 @@
         <DIV ClASS="logo"> Digian </DIV>
         <DIV CLASS="nav">
           <BUTTON> INICIO </BUTTON>
-          <BUTTON> SOBRE NÓS </BUTTON>
-          <BUTTON> SERVIÇOS </BUTTON>
+          <BUTTON onclick="irparasobre()"> SOBRE NÓS </BUTTON>
+          <BUTTON onclick="irparaServ()"> SERVIÇOS </BUTTON>
           <BUTTON> CONTATOS </BUTTON>
         </DIV>
           <DIV CLASS="faq"> <BUTTON> FAQ </BUTTON> </DIV>
@@ -25,7 +26,7 @@
           <BR>
           Que vão potencializar a sua marca na Web.
           </P></DIV></DIV></SECTION>
-    <SECTION>
+    <SECTION id="sobre">
     <DIV Class="sobre">
       <DIV class="sobretexto">
         <H2>Sobre Nós</H2>
@@ -36,13 +37,13 @@
     <button class="iniciob" id="init"> INÍCIO</button>
        </DIV>
     <DIV Class="sobreimagem">
-      <IMG SRC="sobre.png" width="470" height="550">
+      <IMG SRC="sobre.png" width="470" height="550" id="sobre">
       </DIV>
     </DIV>
     </SECTION>
     <SECTION>
       <DIV class="serv" id="servico">
-        <h2> Nossos Serviços</h2>
+        <h2 id="iserv"> Nossos Serviços</h2>
         <p> Veja a seguir os Serviços Oferecidos pela Digian</p>
         <br>
         <DIV class="quadros">
